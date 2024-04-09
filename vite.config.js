@@ -9,12 +9,14 @@ export default defineConfig({
             output: {
                 manualChunks(id) {
                     if (id.includes('node_modules')) {
-                        // split vendor code into separate chunks
                         return 'vendor';
                     }
                 }
             }
         },
-        chunkSizeWarningLimit: 600, // Adjust the chunk size warning limit (in KB)
+        chunkSizeWarningLimit: 600, 
+        build: {
+            outDir: 'dist', 
+          },
     },
 });
