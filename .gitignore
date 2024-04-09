@@ -8,11 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor directories and files copied by .gitignore generator
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,5 +21,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# End of https://mrkandreev.name/snippets/gitignore-generator/#react
 
 .env
